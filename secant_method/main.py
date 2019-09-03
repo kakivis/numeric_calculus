@@ -1,18 +1,12 @@
 #!/usr/bin/python
 
 
-import sys
 from math import *
 
 
 # Put your function in the return value here.
 def math_function(x):
 	return cos(x) - x
-
-
-def skip_lines(n_lines):
-	for i in range(n_lines):
-		print("")
 
 
 def get_float_input(string):
@@ -37,7 +31,7 @@ def find_root(x_n, x_n1, precision):
 		if error < precision:
 			return [x_n, error, i]
 
-	print("Reached Max Number of Iterations!!!! " + max_iterations)
+	print("Reached Max Number of Iterations!!!! " + str(max_iterations))
 	return [None, None, None]
 
 
@@ -54,9 +48,14 @@ def print_results(root, error, iterations):
 	print("Iterations: " + str(iterations))
 
 
-if __name__ == '__main__':
+def print_presentation():
 	print("Numeric Calculus - Secant Method")
-	skip_lines(2)
+	print("")
+	print("")
+
+
+if __name__ == '__main__':
+	print_presentation()
 
 	[x_0, x_1, desired_precision] = get_user_inputs()
 
