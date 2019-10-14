@@ -48,7 +48,7 @@ def print_results(solution_array, error_array, iterations):
     print("")
     print("-------->Solution: " + str(solution_array))
     print("")
-    print("-------->Error: " + str(error_array))
+    print("-------->Error: " + str(max(error_array)))
     print("")
     print("-------->Iterations: " + str(iterations+1))
 
