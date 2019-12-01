@@ -1,9 +1,6 @@
 #!/usr/bin/python
 
 
-from math import *
-
-
 def get_float_array_input(string):
 	string_input = raw_input(string)
 	input_list = string_input.split()
